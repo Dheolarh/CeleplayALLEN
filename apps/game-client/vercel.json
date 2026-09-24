@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npm run build --workspace=game-client",
-  "outputDirectory": "apps/game-client/dist",
-  "installCommand": "npm install",
+  "installCommand": "cd ../.. && npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/((?!assets/|.*\\.[a-zA-Z0-9]+$).*)",
